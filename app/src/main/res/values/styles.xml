@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="price">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+    </style>
+    <style name="price_label">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">textStart</item>
+    </style>
+    <style name="price_line">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_weight">1.5</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@color/contrast</item>
+    </style>
+    <style name="price_quantity">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.6</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textAlignment">textEnd</item>
+    </style>
+    <style name="toppings">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:baselineAligned">false</item>
+    </style>
+    <style name="topping_column">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingHorizontal">15dp</item>
+    </style>
+    <style name="checkbox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:onClick">check</item>
+    </style>
+    <style name="sweet_checkbox" parent="checkbox">
+        <item name="android:textColor">@color/third</item>
+        <item name="android:buttonTint">@color/third</item>
+    </style>
+    <style name="spiced_checkbox" parent="checkbox">
+        <item name="android:textColor">@color/second</item>
+        <item name="android:buttonTint">@color/second</item>
+    </style>
+    <style name="creamy_checkbox" parent="checkbox">
+        <item name="android:textColor">@color/pastel</item>
+        <item name="android:buttonTint">@color/pastel</item>
+    </style>
+</resources>

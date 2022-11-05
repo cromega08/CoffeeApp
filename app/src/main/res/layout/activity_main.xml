@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    <Coffee App: An example app of a Coffee Application.>
+    Copyright (C) <2022>  <Cromega>
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingVertical="15dp"
+        android:paddingHorizontal="20dp">
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22.5sp"
+            android:hint="@string/username"
+            android:textAlignment="center"
+            android:textColorHint="@color/white"
+            android:textColor="@color/main"
+            android:textColorHighlight="@color/black"
+            android:background="@color/contrast"
+            android:inputType="textPersonName"
+            android:paddingVertical="7.5dp"
+            android:paddingHorizontal="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor" />
+        <LinearLayout
+            android:id="@+id/coffee_price"
+            style="@style/price"
+            android:layout_below="@id/username">
+            <TextView
+                android:id="@+id/coffee_price_label"
+                style="@style/price_label"
+                android:layout_weight="1"
+                android:text="@string/coffee_price_label"
+                android:textColor="@color/coffee" />
+            <View
+                style="@style/price_line"
+                android:layout_weight="4"/>
+            <TextView
+                android:id="@+id/coffee_price_quantity"
+                style="@style/price_quantity"
+                android:layout_weight="0.8"
+                android:text="@string/coffee_price_quantity"
+                android:textColor="@color/coffee" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/sweet_price"
+            style="@style/price"
+            android:layout_below="@id/coffee_price" >
+            <TextView
+                android:id="@+id/sweet_price_label"
+                style="@style/price_label"
+                android:text="@string/sweet_price_label"
+                android:textColor="@color/third" />
+            <View
+                style="@style/price_line"/>
+            <TextView
+                android:id="@+id/sweet_price_quantity"
+                style="@style/price_quantity"
+                android:text="@string/sweet_price_quantity"
+                android:textColor="@color/third" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/sweet_toppings"
+            style="@style/toppings"
+            android:layout_below="@id/sweet_price">
+            <LinearLayout
+                style="@style/topping_column">
+                <CheckBox
+                    style="@style/sweet_checkbox"
+                    android:text="@string/sweet_sugar" />
+                <CheckBox
+                    style="@style/sweet_checkbox"
+                    android:text="@string/sweet_brown_sugar" />
+                <CheckBox
+                    style="@style/sweet_checkbox"
+                    android:text="@string/sweet_molasses" />
+                <CheckBox
+                    style="@style/sweet_checkbox"
+                    android:text="@string/sweet_honey" />
+                <CheckBox
+                    style="@style/sweet_checkbox"
+                    android:text="@string/sweet_chocolate_chips" />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/topping_column" >
+                <CheckBox
+                    style="@style/sweet_checkbox"
+                    android:text="@string/sweet_cocoa_powder" />
+                <CheckBox
+                    style="@style/sweet_checkbox"
+                    android:text="@string/sweet_sprinkles" />
+                <CheckBox
+                    style="@style/sweet_checkbox"
+                    android:text="@string/sweet_nutella" />
+                <CheckBox
+                    style="@style/sweet_checkbox"
+                    android:text="@string/sweet_mint" />
+                <CheckBox
+                    style="@style/sweet_checkbox"
+                    android:text="@string/sweet_peanut_butter" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/spiced_price"
+            style="@style/price"
+            android:layout_below="@id/sweet_toppings" >
+            <TextView
+                android:id="@+id/spiced_price_label"
+                style="@style/price_label"
+                android:text="@string/spiced_price_label"
+                android:textColor="@color/second" />
+            <View
+                style="@style/price_line"/>
+            <TextView
+                android:id="@+id/spiced_price_quantity"
+                style="@style/price_quantity"
+                android:text="@string/spiced_price_quantity"
+                android:textColor="@color/second" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/spiced_toppings"
+            style="@style/toppings"
+            android:layout_below="@id/spiced_price" >
+            <LinearLayout
+                style="@style/topping_column">
+                <CheckBox
+                    style="@style/spiced_checkbox"
+                    android:text="@string/spiced_cinnamon" />
+                <CheckBox
+                    style="@style/spiced_checkbox"
+                    android:text="@string/spiced_nutmeg" />
+                <CheckBox
+                    style="@style/spiced_checkbox"
+                    android:text="@string/spiced_pumpkin" />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/topping_column">
+                <CheckBox
+                    style="@style/spiced_checkbox"
+                    android:text="@string/spiced_cardamon" />
+                <CheckBox
+                    style="@style/spiced_checkbox"
+                    android:text="@string/spiced_lavender" />
+                <CheckBox
+                    style="@style/spiced_checkbox"
+                    android:text="@string/spiced_turmeric" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/creamy_price"
+            style="@style/price"
+            android:layout_below="@id/spiced_toppings" >
+            <TextView
+                android:id="@+id/creamy_price_label"
+                style="@style/price_label"
+                android:text="@string/creamy_price_label"
+                android:textColor="@color/pastel" />
+            <View
+                style="@style/price_line"/>
+            <TextView
+                android:id="@+id/creamy_price_quantity"
+                style="@style/price_quantity"
+                android:text="@string/creamy_price_quantity"
+                android:textColor="@color/pastel" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/creamy_toppings"
+            style="@style/toppings"
+            android:layout_below="@id/creamy_price" >
+            <LinearLayout
+                style="@style/topping_column">
+                <CheckBox
+                    style="@style/creamy_checkbox"
+                    android:text="@string/creamy_sweet_cream" />
+                <CheckBox
+                    style="@style/creamy_checkbox"
+                    android:text="@string/creamy_butter" />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/topping_column">
+                <CheckBox
+                    style="@style/creamy_checkbox"
+                    android:text="@string/creamy_marshmallows" />
+                <CheckBox
+                    style="@style/creamy_checkbox"
+                    android:text="@string/creamy_ice_cream" />
+            </LinearLayout>
+        </LinearLayout>
+        <CheckBox
+            android:id="@+id/whipe_cream"
+            style="@style/creamy_checkbox"
+            android:text="@string/creamy_whipe_cream"
+            android:layout_below="@id/creamy_toppings"
+            android:layout_centerHorizontal="true" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order"
+            android:textColor="@color/white"
+            android:background="@color/contrast"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="order"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

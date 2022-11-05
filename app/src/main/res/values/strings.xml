@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Coffee App</string>
+    <string-array name="notification_channel">
+        <item>coffee_app_channel</item>
+        <item>Coffee App Channel</item>
+        <item>A Notification Channel for Coffee App</item>
+        <item>%s, you ordered a coffee with a cost of: %.2f\n%s</item>
+    </string-array>
+    <string name="username">Your Name</string>
+    <string name="coffee_price_label">Coffee:</string>
+    <string name="coffee_price_quantity">$2.50</string>
+    <string name="sweet_price_label">Sweet Coffee Toppings</string>
+    <string name="sweet_price_quantity">$1.00</string>
+    <string name="sweet_sugar">Sugar</string>
+    <string name="sweet_brown_sugar">Brown Sugar</string>
+    <string name="sweet_molasses">Molasses</string>
+    <string name="sweet_honey">Honey</string>
+    <string name="sweet_chocolate_chips">Chocolate Chips</string>
+    <string name="sweet_cocoa_powder">Cocoa Powder</string>
+    <string name="sweet_sprinkles">Sprinkles</string>
+    <string name="sweet_nutella">Nutella</string>
+    <string name="sweet_mint">Mint</string>
+    <string name="sweet_peanut_butter">Peanut Butter</string>
+    <string name="spiced_price_label">Spiced Coffee Toppings</string>
+    <string name="spiced_price_quantity">$1.25</string>
+    <string name="spiced_cinnamon">Cinnamon</string>
+    <string name="spiced_nutmeg">Nutmeg</string>
+    <string name="spiced_pumpkin">Pumpkin Spice</string>
+    <string name="spiced_cardamon">Cardamon</string>
+    <string name="spiced_lavender">Lavender</string>
+    <string name="spiced_turmeric">Turmeric</string>
+    <string name="creamy_price_label">Creamy Coffee Toppings</string>
+    <string name="creamy_price_quantity">$1.75</string>
+    <string name="creamy_sweet_cream">Sweet Cream</string>
+    <string name="creamy_butter">Butter</string>
+    <string name="creamy_marshmallows">Marshmallows</string>
+    <string name="creamy_ice_cream">Ice Cream</string>
+    <string name="creamy_whipe_cream">Whipe Cream</string>
+    <string name="order">order</string>
+</resources>
